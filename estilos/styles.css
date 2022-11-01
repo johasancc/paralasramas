@@ -5,13 +5,22 @@
 }
 
 .padre{
-
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(5,1fr);
+    grid-template-areas: 
+    "header header header"
+    "sectionA sectionA aside"
+    "sectionB sectionB aside"
+    "article1 article2 aside"
+    "footer footer footer";
 
 }
 
 
 .header{
 background-color: aqua;
+grid-area: header;
 margin: 10px;
 padding: 10px;
 }
@@ -19,36 +28,42 @@ padding: 10px;
 
 .sectionA{
 background-color: cornflowerblue;
+grid-area: sectionA;
 margin: 10px;
 padding: 10px;
 }
 
 .sectionB{
     background-color: yellow;
+    grid-area: sectionB;
     margin: 10px;
     padding: 10px;
 }
 
 .article1{
     background-color: violet;
+    grid-area: article1;
     margin: 10px;
     padding: 10px;
     }
 
 .article2{
     background-color: cornflowerblue;
+    grid-area: article2;
     margin: 10px;
     padding: 10px;
 }
 
 .aside{
     background-color: rgb(111, 114, 121);
+    grid-area: aside;
     margin: 10px;
     padding: 10px;
 }
 
 .footer{
     background-color: rgb(100, 56, 67);
+    grid-area: footer;
     margin: 10px;
     padding: 10px;
 }
